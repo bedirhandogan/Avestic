@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { Avestic } from 'avestic'
 </script>
 
 <template>
   <div>
-    <Avestic />
+    <img src="" alt="">
   </div>
 </template>
