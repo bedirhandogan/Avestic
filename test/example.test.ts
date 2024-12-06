@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { Button } from '../src'
+import { Avestic } from '../src'
 
 const slotText = 'Test content'
 
 describe('button', () => {
   it('alert render', () => {
-    const wrapper = mount(Button, {
+    const wrapper = mount(Avestic, {
       slots: {
         default: slotText,
       },
@@ -16,7 +16,7 @@ describe('button', () => {
   })
 
   it('loading', () => {
-    const wrapper = mount(Button, {
+    const wrapper = mount(Avestic, {
       props: {
         loading: true,
       },
@@ -26,7 +26,7 @@ describe('button', () => {
   })
 
   it('disabled', () => {
-    const wrapper = mount(Button, {
+    const wrapper = mount(Avestic, {
       props: {
         disabled: true,
       },
