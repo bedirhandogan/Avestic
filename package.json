@@ -1,20 +1,22 @@
 {
-  "name": "vue-bundle-template",
+  "name": "avestic",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.8.0",
   "description": "add description",
   "author": "add author",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/productdevbook",
-  "homepage": "https://github.com/productdevbookcom/vue-bundle-template",
+  "homepage": "https://github.com/bedirhandogan/Avestic",
   "repository": {
     "type": "git",
-    "url": "https://github.com/productdevbookcom/vue-bundle-template.git"
+    "url": "https://github.com/bedirhandogan/Avestic.git"
   },
-  "bugs": "https://github.com/productdevbookcom/vue-bundle-template/issues",
+  "bugs": "https://github.com/bedirhandogan/Avestic/issues",
   "keywords": [
-    "add keywords"
+    "vue",
+    "avestic",
+    "vite",
+    "avatar"
   ],
   "exports": {
     ".": {
@@ -33,7 +35,7 @@
   "scripts": {
     "build": "vite build --mode production",
     "build:watch": "vite build --watch",
-    "dev": "vite",
+    "dev": "vite && vite build --watch",
     "play": "pnpm --filter playground dev",
     "prepublishOnly": "pnpm run build",
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
