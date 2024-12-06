@@ -35,8 +35,7 @@
   "scripts": {
     "build": "vite build --mode production",
     "build:watch": "vite build --watch",
-    "dev": "vite && vite build --watch",
-    "play": "pnpm --filter playground dev",
+    "dev": "pnpm --filter playground dev && vite build --watch",
     "prepublishOnly": "pnpm run build",
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
     "lint": "eslint .",
